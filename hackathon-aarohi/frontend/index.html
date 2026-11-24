@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Aarohi – Empowering her ambitions, supporting her well-being</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><div class="wrap nav">
+<a class="logo" href="#top">Aarohi</a>
+<nav><a href="#features">Features</a><a href="#career">Career</a><a href="#wellness">AshaCare</a><a href="#privacy">Privacy</a><span id="authnav"></span></nav>
+</div></header>
+
+<main id="top">
+<div class="wrap hero">
+<div>
+<h1>Her goals. Her time. Her energy. One plan.</h1>
+<p class="lead">Aarohi brings career guidance, daily planning and wellness support into one app, so a student doesn’t have to juggle five separate ones.</p>
+<a class="cta" href="#career">Explore a career roadmap</a>
+</div>
+
+<div class="card planner" aria-labelledby="pl">
+<h3 id="pl">Today’s plan</h3>
+<p class="sub">How’s your energy right now? Pick one and watch the plan change.</p>
+<div class="seg" id="energy" role="group" aria-label="Energy level">
+<button aria-pressed="true" data-e="good">Energized</button>
+<button aria-pressed="false" data-e="ok">Okay</button>
+<button aria-pressed="false" data-e="low">Low or stressed</button>
+</div>
+<div class="fixed">College, 8 AM to 5 PM (already blocked)</div>
+<ul class="tasks" id="tasks"></ul>
+<div class="bar" aria-hidden="true"><i id="bar"></i></div>
+<p class="msg" id="pmsg" aria-live="polite"></p>
+</div>
+</div>
+
+<section id="features"><div class="wrap">
+<div class="intro"><h2>Everything a student needs, in one place</h2>
+<p>Try the planner and roadmap below for free. Log in or sign up to unlock the full members area.</p></div>
+<div class="stats"><div><b>8</b>subjects</div><div><b>24</b>topic notes</div><div><b>24</b>lectures planned</div><div><b>2</b>AI assistants</div></div>
+<div class="feat">
+<article class="card"><span class="lock">Members</span><h3>Subject notes</h3><p>Exam-focused notes for every subject, topic by topic, with progress tracking.</p><p class="sub">Data Structures · DBMS · Operating Systems · Computer Networks · Java OOP · Web Development · Discrete Maths · Python</p></article>
+<article class="card"><span class="lock">Members</span><h3>Lectures and timetable</h3><p>Your weekly timetable, a lecture plan for each subject, practice tasks and where to learn more.</p></article>
+<article class="card"><span class="lock">Members</span><h3>AI Mentor</h3><p>A study and career coach for study plans, exam prep, projects and resumes.</p><p class="sub">Log in to start chatting.</p></article>
+<article class="card care"><span class="lock">Members</span><h3>AI HealthCare</h3><p>A separate, private assistant for wellbeing questions. Education only, never a diagnosis.</p><p class="sub">Log in to start chatting.</p></article>
+<article class="card"><span class="lock free">Free</span><h3>Adaptive daily planner</h3><p>Plans that change with your energy. Try the live demo at the top of this page.</p></article>
+<article class="card"><span class="lock free">Free</span><h3>Career roadmaps</h3><p>Skills, projects and a next step for three careers. Preview it just below.</p></article>
+</div>
+<p class="center"><a class="cta" href="signup.html">Create free account</a> <a class="alt" href="login.html">Already a member? Log in</a></p>
+</div></section>
+
+<section id="career"><div class="wrap">
+<div class="intro"><h2>Pick a career. Get a roadmap.</h2>
+<p>Choose where you want to go. Aarohi lists the skills to learn, projects to build and the next step. Tick things off as you learn.</p></div>
+<div class="chips" id="roles" role="group" aria-label="Target career"></div>
+<div class="cols" id="road"></div>
+<div class="note" id="rnote" aria-live="polite"></div>
+</div></section>
+
+<section id="wellness"><div class="wrap">
+<div class="intro"><h2>AshaCare: wellness that comes first, not last</h2>
+<p>Reliable health education and self-care ideas, written for young women. Check-ins are always optional.</p></div>
+<div class="care">
+<div class="chips" id="topics" role="group" aria-label="Wellness topics"></div>
+<div class="card answer" id="ans" aria-live="polite"></div>
+</div>
+<p class="disc">AshaCare gives education and support only. It does not diagnose or treat any condition.</p>
+</div></section>
+
+<section id="privacy"><div class="wrap">
+<div class="intro"><h2>Built to be trusted</h2></div>
+<ul class="promises">
+<li><h3>Check-ins are voluntary</h3><p>Skip them any day. Your plan still works.</p></li>
+<li><h3>Sensitive entries stay private</h3><p>Wellness notes are stored separately from everything else.</p></li>
+<li><h3>Never used to rank you</h3><p>Wellness data is never used to judge your career potential.</p></li>
+<li><h3>Education, not diagnosis</h3><p>Health content explains topics. It doesn’t tell you what’s wrong.</p></li>
+<li><h3>Trusted sources only</h3><p>Answers draw on reliable, verifiable sources.</p></li>
+<li><h3>Real people when it matters</h3><p>Aarohi points you to qualified professionals when that’s the right next step.</p></li>
+</ul>
+</div></section>
+
+<section><div class="wrap"><div class="rise">
+<h2>Career intelligence, trusted wellness and adaptive planning in one place.</h2>
+<p>Empowering her ambitions, supporting her well-being.</p>
+<a class="cta" href="#top">Plan my day</a>
+</div></div></section>
+</main>
+
+<footer><div class="wrap">Aarohi · Team Code Divas · B.Tech CSE, Section E, K.R. Mangalam University</div></footer>
+
+<script src="auth.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

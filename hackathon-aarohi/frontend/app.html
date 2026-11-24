@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Dashboard – Aarohi</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><div class="wrap nav">
+<a class="logo" href="#top">Aarohi</a>
+<nav><a href="#career">Career</a><a href="#wellness">AshaCare</a><a href="#privacy">Privacy</a><span id="authnav"></span></nav>
+</div></header>
+
+<body>
+<header><div class="wrap nav">
+<a class="logo" href="#top">Aarohi</a>
+<nav aria-label="Account"><span id="authnav"></span></nav>
+</div></header>
+<div class="wrap">
+<div class="tabs" role="tablist" aria-label="Sections">
+<button role="tab" id="tab-dash">Dashboard</button><button role="tab" id="tab-notes">Notes</button><button role="tab" id="tab-lec">Lectures</button><button role="tab" id="tab-mentor">AI Mentor</button><button role="tab" id="tab-health" class="hl">AI HealthCare</button>
+</div>
+
+<section class="panel" id="p-dash"><h1 id="hello" style="font-size:2.2rem">Welcome</h1>
+<div class="statrow" id="stats"></div><div class="bar" aria-hidden="true"><i id="pbar"></i></div>
+<div class="grid2"><div class="card" id="next"></div><div class="card" id="today"></div></div>
+<div class="grid3">
+<div class="card"><h3>AI Mentor</h3><p class="sub">Study plans, exam prep, projects and career advice.</p><button class="cta" data-go="mentor">Chat with Mentor</button></div>
+<div class="card"><h3>AI HealthCare</h3><p class="sub">Private wellbeing information, separate from your studies.</p><button class="cta" data-go="health">Open HealthCare</button></div>
+<div class="card"><h3>Lectures</h3><p class="sub">Timetable, lecture plans and practice tasks.</p><button class="cta" data-go="lec">View lectures</button></div>
+</div></section>
+
+<section class="panel" id="p-notes" hidden><h2>Subject notes</h2><p class="sub">Short, exam-focused notes. Open a topic, then tick it off when you’ve revised it.</p>
+<div class="chips subjchips" id="nchips"></div><div id="nbody"></div></section>
+
+<section class="panel" id="p-lec" hidden><h2>Lectures</h2>
+<div class="card" id="ttable"></div>
+<div class="chips subjchips" id="lchips" style="margin-top:20px"></div><div class="grid2" id="lbody"></div></section>
+
+<section class="panel" id="p-mentor" hidden><h2>AI Mentor</h2><p class="sub">Your study and career coach.</p>
+<div class="chips prompts" data-to="mentor"><button data-say="Make me a weekly study plan for 8 subjects">Weekly study plan</button><button data-say="How should I prepare for my DBMS exam?">Exam prep</button><button data-say="Roadmap to become a software developer">Developer roadmap</button><button data-say="How do I write a good fresher resume?">Resume tips</button></div>
+<div class="chatbox"><div class="log" id="mentor-log" aria-live="polite"></div>
+<form class="chatform" id="mentor-form"><input type="text" placeholder="Ask your mentor anything…" aria-label="Message to AI Mentor" maxlength="1000" autocomplete="off"><button class="cta" type="submit">Send</button></form></div></section>
+
+<section class="panel health" id="p-health" hidden><h2>AI HealthCare</h2><p class="sub">Wellbeing education for students. Separate from your Mentor chats.</p>
+<div class="note">Education only. This is not a doctor and can’t diagnose or suggest medicines. In an emergency call <b>112</b>. For emotional support in India, call <b>Tele-MANAS 14416</b> (free, 24/7).</div>
+<div class="chips prompts" data-to="health" style="margin-top:16px"><button data-say="How can I manage exam stress?">Exam stress</button><button data-say="Tips for better sleep">Better sleep</button><button data-say="How can I ease period cramps?">Period cramps</button><button data-say="How do I avoid neck and back pain from studying?">Posture</button></div>
+<div class="chatbox"><div class="log" id="health-log" aria-live="polite"></div>
+<form class="chatform" id="health-form"><input type="text" placeholder="Ask a wellbeing question…" aria-label="Message to AI HealthCare" maxlength="1000" autocomplete="off"><button class="cta" type="submit">Send</button></form></div></section>
+</div>
+<footer><div class="wrap">Aarohi · Team Code Divas · B.Tech CSE, Section E, K.R. Mangalam University</div></footer>
+<script src="auth.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
